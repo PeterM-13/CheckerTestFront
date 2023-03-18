@@ -15,8 +15,6 @@ async function getData() {
     }
   }
   
-
-
 async function updateData() {
     const data = await getData();
     let divs = document.querySelectorAll('div');
@@ -57,5 +55,5 @@ async function updateData() {
   }
   
   updateData()
-  setInterval(updateData, 600000);
+  setInterval(updateData, 10000);
   
