@@ -8,7 +8,7 @@ async function getData() {
         }
       });
       const data = await response.json();
-      return data.payload;
+      return await data.payload;
     } catch (error) {
       document.body.style.backgroundColor = 'red';
       console.error(error);
