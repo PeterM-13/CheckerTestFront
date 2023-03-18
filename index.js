@@ -51,5 +51,5 @@ async function updateData() {
   }
   
   updateData()
-  setInterval(updateData, 12000);
+  setInterval(updateData, 600000);
   
