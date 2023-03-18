@@ -8,9 +8,10 @@ async function getData() {
         }
       });
       const data = await response.json();
+      console.log("Updated")
       return await data.payload;
     } catch (error) {
-      document.body.style.backgroundColor = 'red';
+      document.querySelector("body").style.backgroundColor = 'red';
       console.error(error);
     }
   }
