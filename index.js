@@ -1,4 +1,4 @@
-url = "http://localhost:3000/api/checker"
+url = "https://code-checker.onrender.com/api/checker"
 async function getData(){
     const response = await fetch(url, {
         method: 'GET',
