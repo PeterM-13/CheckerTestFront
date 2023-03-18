@@ -1,14 +1,20 @@
 url = "https://code-checker.onrender.com/api/checker"
-async function getData(){
-    const response = await fetch(url, {
+async function getData() {
+    try {
+      const response = await fetch(url, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
         }
       });
       const data = await response.json();
-      return await data.payload;
-}
+      return data.payload;
+    } catch (error) {
+      document.body.style.backgroundColor = 'red';
+      console.error(error);
+    }
+  }
+  
 
 
 async function updateData() {
