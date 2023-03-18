@@ -31,7 +31,7 @@ async function updateData() {
         statusTag.textContent = 'Status: ';
         div.appendChild(statusTag);
         const placeTag = document.createElement('p');
-        placeTag.textContent = 'Place: ';
+        placeTag.textContent = 'Location: ';
         div.appendChild(placeTag);
         document.querySelector("body").appendChild(div);
       }
@@ -51,7 +51,7 @@ async function updateData() {
         statusTag.style.color = 'red';
       }
       const placeTag = divs[index].querySelector('p:last-of-type');
-      placeTag.textContent = `Place: ${place}`;
+      placeTag.textContent = `Location: ${place}`;
     });
   }
   

@@ -14,3 +14,11 @@ div{
     margin: 1rem;
     font-size: large;
 }
+
+@media screen and (max-width: 600px) {
+    div{
+        width: 300px;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+}
